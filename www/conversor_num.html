@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>LEARN NETS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body class="subpage">
+	<!-- Header -->
+		<header id="header">
+			<div class="logo"><a href="index.html">LEARN<span>NETS</span></a></div>
+			<a href="#menu"></a>
+		</header>
+	<!-- Nav -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="conversor_nu.html">Conversão Númerica</a></li>
+                <li><a href="calculadora_ip.html">Calculadora IP</a></li>
+				<li><a href="conex_re.html">Conexão Remota</a></li>
+			</ul>
+		</nav>
+	<!-- One -->
+		<section id="two" class="wrapper style2">
+			<div class="inner">
+				<div class="box">
+					<div class="content">
+						<tbody>
+							<tr>
+								<td>
+									<div id="dbh"></div>
+									<h3 >Dec para Bin e Hex</h3>
+									<form onsubmit="convertnum_dec(this);return false;">
+										Dec:<input name="num" size="11" class="in" type="text"> 
+										<br>
+										<input value=" Calcular" type="submit">  
+										<input value=" Limpar " onclick="resetform11(this.form)" type="button">
+										<br>
+										<br>
+										Resultado: 
+										<br>
+										<br>Bin:
+										<input name="bin_1" size="35" readonly="readonly" type="text"> 
+										<br>Hex:
+										<input name="hex_1" size="11" readonly="readonly" type="text"> 
+										<br>
+										<input name="errortxt" size="40" readonly="readonly" class="flat" type="text"> 
+									</form>
+								</td>
+								<td>&nbsp;</td>
+								<div id="bdh"></div>
+								<td>
+									<h3>Bin para Dec e Hex</h3>
+									<form onsubmit="convertnum_bin(this);return false;"> 
+										Bin:<input name="num" size="35" class="in" type="text"> 
+										<br>
+										<input value=" Calcular " type="submit">  
+										<input value=" Limpar " onclick="resetform10(this.form)" type="button">
+										<br>
+										<br>
+										Resultado: 
+										<br>
+										<br>Dec:
+										<input name="dec_1" size="11" readonly="readonly" type="text"> 
+										<br>Hex:
+										<input name="hex_1" size="11" readonly="readonly" type="text"> 
+										<br>
+										<input name="errortxt" size="40" readonly="readonly" class="flat" type="text"> 
+									</form>
+								</td>
+								<td>&nbsp;</td>
+								<div id="hdb"></div>
+								<td>
+									<h3>Hex para Dec e Bin</h3>
+									<form onsubmit="convertnum_hex(this);return false;"> 
+										Hex:<input name="num" size="11" class="in" type="text"> 
+										<br>
+										<input value=" Calcular " type="submit">  
+										<input value=" Limpar " onclick="resetform9(this.form)" type="button">
+										<br>
+										<br>
+										Resultado: 
+										<br>
+										<br>Dec:
+										<input name="dec_1" size="11" readonly="readonly" type="text"> 
+										<br>Bin:
+										<input name="bin_1" size="35" readonly="readonly" type="text"> 
+										<br>
+										<input name="errortxt" size="40" readonly="readonly" class="flat" type="text"> 
+									</form>
+								</td>
+							</tr>
+						</tbody>
+					</div>
+				</div>
+			</div>
+		</section>
+	<!-- Scripts -->
+		<script type="text/javascript">
+			app.initialize();
+		</script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrollex.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/util.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/calculando.js"></script>
+	</body>
+</html>

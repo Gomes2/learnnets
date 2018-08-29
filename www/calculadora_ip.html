@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>LEARN NETS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    	<meta name="description" content="Free TCP/IP network calculators">
+    	<meta name="keywords" content="IP address, subnet mask, subnet, subnet calculator, network mask, subnet mask calculator, ip calculator, tcp/ip, network, javascript">
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body class="subpage">
+	<!-- Header -->
+		<header id="header">
+			<div class="logo"><a href="index.html">LEARN<span>NETS</span></a></div>
+			<a href="#menu"></a>
+		</header>
+	<!-- Nav -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="conversor_nu.html">Conversão Númerica</a></li>
+				<li><a href="conex_re.html">Conexão Remota</a></li>
+			</ul>
+		</nav>
+	<!-- One -->
+		<section id="one" class="wrapper style2">
+			<div class="inner">
+				<div class="box">
+					<div class="content">
+						<form onsubmit="calNBFL(this);return false;">
+							<font style="vertical-align: inherit;"> IP + MÁSCARA: </font>
+							<br>
+							<input name="ip" size="32" value="192.168.0.0/24" class="in" type="text"> 
+							<font style="vertical-align: inherit;">
+								<input value="Calcular " type="submit">
+							</font>  
+							<font style="vertical-align: inherit;">
+									<input value="Limpar " onclick="resetform4(this.form)" type="button">
+							</font>
+							<br>
+							<br>
+							<input name="errortxt" size="40" readonly="readonly" class="flat" type="text"> 
+							<br>
+							<font style="vertical-align: inherit;">Resultado: </font>
+							<br>
+							<table summary="result">
+								<tbody>
+									<tr>
+										<td>
+											<font style="vertical-align: inherit;">Endereços utilizáveis:</font>
+										</td>
+										<td><input name="numofaddr" size="10" readonly="readonly" type="text"> </td>
+										<br>
+									</tr>
+									<tr>
+										<td>
+											<font style="vertical-align: inherit;">Mascarar:</font>
+										</td>
+										<td>
+											<input name="snm_1" size="3" readonly="readonly" type="text">
+											<input name="snm_2" size="3" readonly="readonly" type="text">
+											<input name="snm_3" size="3" readonly="readonly" type="text">
+											<input name="snm_4" size="3" readonly="readonly" type="text">
+											<font style="vertical-align: inherit;"> = </font>
+											<input name="bits" size="3" readonly="readonly" type="text"> 
+											<br>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<font style="vertical-align: inherit;">Máscara como hex:</font>
+										</td>
+										<td>
+											<input name="hex_1" size="3" readonly="readonly" type="text">
+											<input name="hex_2" size="3" readonly="readonly" type="text">
+											<input name="hex_3" size="3" readonly="readonly" type="text">
+											<input name="hex_4" size="3" readonly="readonly" type="text"> 
+											<br>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<font style="vertical-align: inherit;">Rede:</font>
+										</td>
+										<td>
+											<input name="nwadr_1" size="3" readonly="readonly" type="text">
+											<input name="nwadr_2" size="3" readonly="readonly" type="text">
+											<input name="nwadr_3" size="3" readonly="readonly" type="text">
+											<input name="nwadr_4" size="3" readonly="readonly" type="text"> 
+											<br>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<font style="vertical-align: inherit;">Primeiro utilizável:</font>
+										</td>
+										<td>
+											<input name="firstadr_1" size="3" readonly="readonly" type="text">
+											<input name="firstadr_2" size="3" readonly="readonly" type="text"> 
+											<input name="firstadr_3" size="3" readonly="readonly" type="text"> 
+											<input name="firstadr_4" size="3" readonly="readonly" type="text"> 
+											<br>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<font style="vertical-align: inherit;">Último utilizável:</font>
+										</td>
+										<td>
+											<input name="lastadr_1" size="3" readonly="readonly" type="text">
+											<input name="lastadr_2" size="3" readonly="readonly" type="text">
+											<input name="lastadr_3" size="3" readonly="readonly" type="text">
+											<input name="lastadr_4" size="3" readonly="readonly" type="text">
+										<br>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<font style="vertical-align: inherit;">Broadcast:</font>
+										</td>
+										<td>
+											<input name="bcast_1" size="3" readonly="readonly" type="text">
+											<input name="bcast_2" size="3" readonly="readonly" type="text">
+											<input name="bcast_3" size="3" readonly="readonly" type="text">
+											<input name="bcast_4" size="3" readonly="readonly" type="text">
+										<br>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</form>			
+					</div>
+				</div>
+			</div>
+		</section>
+	<!-- Scripts -->
+		<script type="text/javascript">
+		app.initialize();
+		</script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrollex.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/util.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/calculando.js"></script>
+	</body>
+</html>
